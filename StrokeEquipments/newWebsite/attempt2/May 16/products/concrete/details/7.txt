@@ -1,0 +1,15 @@
+Product – Concrete vibrator PV3 
+Part Number - 3000 0003
+
+Unique Features
+point - Extremely durable 
+point - world renown GREAVES engine 
+Features End
+
+table heading : Technical Specifications
+point - Engine, value = GREAVES MK25 engine 
+point – Power, value = 3HP
+point - Type of fuel for the engine, value = Petrol
+point – Type of cooling, value = air cooled
+point - RPM, value = 3600
+table end

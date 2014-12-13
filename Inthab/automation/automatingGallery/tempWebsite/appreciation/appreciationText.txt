@@ -1,0 +1,17 @@
+Bold = Appreciation
+Award = A+D young  architects  award  in the year 2006
+Link = 
+Break
+Award = ARCHI DESIGN award for best hospitality project (south  region) in the year 2009
+Link = http://www.archidesignawards.com/national-2006/
+Break
+Award = ARCHI DESIGN  commendation award for best hospitality project  in the year 2009
+Link = http://www.archidesignawards.com/wp-content/gallery/archidesign-award3rd-cycle/archidesign-award3rd-cycle-20.jpg
+Break
+Award = IIID AWARDS winners  for small commerical office space -SOUTH 2012
+Link = http://www.iiidanchorawards.net.in/RegionalAwardsGallery.aspx?ID=S1-04CAT-WIN
+Break
+Award = ARCHIVE - Construire La Prevention Du Paludisme one of the top 10 finalists  2012
+Link = https://www.facebook.com/photo.php?fbid=10152174600550444&set=a.10152174563655444.915850.166606995443&type=3&theater
+Break
+						

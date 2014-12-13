@@ -1,0 +1,24 @@
+Product - ReBar Bending machine GW42D
+Part Number - 2000 1042
+
+Unique Features
+point - Efficient and accurate
+point - Gear Box is completely enclosed
+point - Fuel efficient roller bearing Structure
+point - Excellent operational capacity
+Features End
+
+Applications
+point - TMT rod
+point - steel rod
+point - iron rod
+Applications End
+ 
+
+table heading : Technical Specifications
+point - Maximum Bending diameter , value = 36mm(TMT)
+point - Motor Capacity , value = 5HP
+point - overall dimensions , value = 810mm x 760mm x 860mm
+point - Weight , value = 365kgs
+table end
+

@@ -1,0 +1,35 @@
+Product - Walk Behind roller MMAL 31
+Part Number - 1000 0031
+
+Unique Features
+point - Mechanical Drive, thus lesser maintenance cost 
+point - Ergonomic design
+point - Easy Maneuverability
+point – Grad-ability of about 35%
+point - Recognized GREAVES 5520 engine
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = GREAVES make, Model No 5520 
+point - RPM, value = 3600
+point - Type of fuel for the engine, value = Diesel
+point - Traveling speed, value = 0-4km/hr (forward and reverse)
+point - Turing radius, value = 1800mm
+point - Static forward load, value = 35N/cm
+point - Static back load, value = 38N/cm
+point - Normal amplitude, value = 0-6mm
+point - Vibration Frequency, value = 70 Hz
+point - Water tank Capacity, value = 50 Liters
+point - Drive, value = Static Hydraulic drive Unit
+point - Vibrating mechanism, value = Automatic centrifugal clutch
+point - Width of the steel rolling drum, value = 600mm
+point - Diameter of the steel rolling drum, value = 450mm
+point - operating mass, value = 580kgs
+table end

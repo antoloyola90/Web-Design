@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+	<link rel='stylesheet' type='text/css' href='./menuFiles/styles.css' />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script type='text/javascript' src='./menuFiles/menu_jquery.js'></script>
+	
+	<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+	<script src="http://malsup.github.io/jquery.cycle2.shuffle.js"></script>
+	<script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+	
+<style>
+	.mainPageImages {
+		//border-radius:30% 30% 30% 30%;
+		width : 200px;
+		height : 200px;
+		
+	}
+	
+	p {
+		font-family: Helvetica, sans-serif;
+		text-align : justify;
+	}
+	
+</style>
+
+	<style>
+	
+
+	.sexy_line { 
+    	margin: 5px 0;
+   	 	height: 1px;
+    	background: black;
+    	background: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(black), color-stop(50%, black));
+	}
+	
+	.yellow_line { 
+    	margin: 5px 0;
+   	 	height: 24px;
+    	background: black;
+    	background: -webkit-gradient(linear, 0 0, 100% 0, from(#F8F301), to(white), color-stop(50%, #F8F301));
+	}
+	
+	
+	</style>
+
+</head>
+<body>
+<br/>
+<div align="left">
+	<img src="./stroke_logo.png" height="40px"/>
+</div>
+<br/><br/>
+
+<div class="sexy_line"></div>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Compaction Equipment</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Product 2</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About Us</span></a></li>
+   <li><a href='#'><span>Customizations</span></a></li>
+   <li><a href='#'><span>Contact</span></a></li>
+   <li class='last'><a href='#'><span>Enquire</span></a></li>
+</ul>
+</div>
+
+<div class="sexy_line"></div>
+<br/>
+
+<div width="100%" height="60%"  style="background:white">
+<table width="100%">
+<tr>
+<td width="25%">
+
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollVert"
+    data-cycle-speed=2000
+    data-cycle-pause-on-hover="true"
+    data-cycle-caption="#adv-custom-caption1"
+    data-cycle-caption-template="{{cycleTitle}}"
+	data-cycle-loader="wait"
+	data-cycle-center-horz=true
+    data-cycle-center-vert=true
+    >
+     <img class="mainPageImages" src="./products/compaction/images/1.jpg" data-cycle-title="Plate Compactor ER02" />
+    <img class="mainPageImages" src="./products/compaction/images/4.jpg" data-cycle-title="Walk Behind roller MMAL 31" />
+    <img class="mainPageImages" src="./products/compaction/images/6.jpg" data-cycle-title="Ride on roller MMAL 42" />
+
+</div>
+<br/><br/>
+<div id="adv-custom-caption1" style="font-size:20;" align="center"></div>
+
+</td>
+
+<td width="25%">
+
+<div id="adv-custom-caption2" style="font-size:20;" align="center"></div>
+<br/><br/>
+
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollVert"
+    data-cycle-speed=2000
+    data-cycle-pause-on-hover="true"
+    data-cycle-caption="#adv-custom-caption2"
+    data-cycle-caption-template="{{cycleTitle}}"
+	data-cycle-loader="wait"
+	data-cycle-center-horz=true
+    data-cycle-center-vert=true
+    >
+
+    <img class="mainPageImages" src="./products/compaction/images/7.jpg" data-cycle-title="Walk Behind roller RWYL 12" />
+    <img class="mainPageImages" src="./products/compaction/images/8.jpg" data-cycle-title="Tamping rammer TR52" />
+     <img class="mainPageImages" src="./products/rebar/images/1.jpg" data-cycle-title="ReBar Bending machine GW42D"/>
+
+</div>
+
+</td>
+
+<td width="25%">
+
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollVert"
+    data-cycle-speed=2000
+    data-cycle-pause-on-hover="true"
+    data-cycle-caption="#adv-custom-caption3"
+    data-cycle-caption-template="{{cycleTitle}}"
+	data-cycle-loader="wait"
+	data-cycle-center-horz=true
+    data-cycle-center-vert=true
+    >
+    <img class="mainPageImages" src="./products/rebar/images/2.jpg" data-cycle-title="ReBar Bending machine GW50D"/>
+    <img class="mainPageImages" src="./products/rebar/images/3.jpg" data-cycle-title="ReBar Cutting machine GQ42C"/>
+    <img class="mainPageImages" src="./products/rebar/images/4.jpg" data-cycle-title="ReBar Cutting machine GQ45C"/>
+
+</div>
+<br/><br/>
+<div id="adv-custom-caption3" style="font-size:20;" align="center"></div>
+
+</td>
+
+<td width="25%">
+
+<div id="adv-custom-caption4" style="font-size:20;" align="center"></div>
+<br/><br/>
+
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollVert"
+    data-cycle-speed=2000
+    data-cycle-pause-on-hover="true"
+    data-cycle-caption="#adv-custom-caption4"
+    data-cycle-caption-template="{{cycleTitle}}"
+	data-cycle-loader="wait"
+	data-cycle-center-horz=true
+    data-cycle-center-vert=true
+    >
+    <img class="mainPageImages" src="./products/concrete/images/1.jpg" data-cycle-title="Concrete vibrator DV5"/>
+    <img class="mainPageImages" src="./products/concrete/images/2.jpg" data-cycle-title="Concrete vibrator EV2S"/>
+    <img class="mainPageImages" src="./products/concrete/images/6.jpg" data-cycle-title="Concrete vibrator PV2"/>
+    <img class="mainPageImages" src="./products/concrete/images/8.jpg" data-cycle-title="Concrete vibrator Needle CVN 25"/>
+
+</div>
+
+</td>
+
+</tr>
+</table>
+</div>
+
+<div class="sexy_line"></div>
+
+<table width="100%">
+
+<tr>
+<td width="50%">
+<div class="yellow_line">
+<h3 style="padding-left: 0.25cm;">About Us</h3>
+</div>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+	$(".jQueryDetailsExample .laterShow").hide();
+	
+	$(".jQueryDetailsExample .initialShow").click(function(){
+		$(this).siblings(".laterShow").slideToggle();
+	});
+
+})
+	</script>
+	
+<div class="jQueryDetailsExample" style="float: left;background:#FBFBEF;padding:0.5cm 0.5cm 0.5cm 0.5cm;" >
+	<p class="initialShow"> Starting from humble beginnings over 75 years ago, from a seed sown by Mr. Najmuddin Millwala we have grown to a vast network of interconnected organizations which caters a vast umbrella of clientele. With our strong presence in various top industrial and construction organizations.</p>
+	<p class="initialShow"> We at STROKE strongly believe  in providing quality products at reasonable pricing with prompt service and support to all our clients. With our primary focus on superior quality of the products which we have to offer.  We constantly evolve as the market grows and try to provide with better and superior quality and technology to ease out the problems faced in a typical construction site, our testimonials from decision makers of the top construction and infrastructure contractors speak for themselves.
+	<a href="./about/aboutUs.html">Read More...</a></p>
+	<!--
+	<p class="laterShow"> We are a unique blend of technical expertise, which is provided to us by our mentor, Mr Najmuddin Millwala and his team of experienced technical advisors who have been around for almost 75 years and a third generation of young and innovative minds with the help of technology to provide better services and superior quality in the vast range of products which we offer.</p>
+	<p class="laterShow"> We have extended our presence from small beginnings in Chennai to capture the ever fast growing construction industry in the south of India with a strong presence in states of Karnataka, Andhra Pradesh and Kerela, with offices In bangalore and Hyderabad, and we are hoping to start our services pan India and export soon.</p>
+	-->
+</div>
+</td>
+<td width="50%">
+<div class="yellow_line">
+<h3 style="padding-left: 0.25cm;">Offices in Bangalore & Chennai</h3>
+</div>
+
+<div class="mapDiv" style="float: right; background:#FBFBEF;" >
+<img src="./mapScreenshot.jpg" width="100%"/>
+</div>
+</td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

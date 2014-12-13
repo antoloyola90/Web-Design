@@ -1,0 +1,25 @@
+Product – Plate Compactor ER05
+Part Number - 1000 0005
+
+Unique Features
+point - Easy Maneuverability
+point - Heavy duty base plate of 19mm
+point – Can access the most narrowest regions
+point - GREAVES engine 
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = GREAVES make 5520 engine 
+point – power, value = 5HP
+point - Type of fuel for the engine, value = Diesel
+point - Impact force, value = 16.5kN
+point – impact frequency, value = 7540 VPM
+point - operating mass, value = 160kgs
+table end

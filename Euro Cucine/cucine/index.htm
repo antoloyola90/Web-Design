@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Euro Cucine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript1.2" src="supersleight-min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<script language="JavaScript">
+function verify()
+{
+
+if (document.forms[0].elements[0].value=="")
+{
+	 alert("Enter your Name");
+	 document.forms[0].elements[0].focus()
+	 return(false);
+}
+
+ if (document.forms[0].elements[1].value=="")
+{
+	 alert("Enter your Address:");
+	 document.forms[0].elements[1].focus()
+	 return(false);
+} 
+if (document.forms[0].elements[2].value=="")
+{
+	 alert("Enter your Phone Number");
+	 document.forms[0].elements[2].focus()
+	 return(false);
+}
+if(isNaN(document.forms[0].elements[2].value)) 
+   { 
+     alert("Invalid data format.\n\nOnly numbers are allowed."); 
+     document.forms[0].elements[2].value="";
+	 document.forms[0].elements[2].select(); 
+	 document.forms[0].elements[2].focus(); 
+     return (false); 
+   }
+    
+if(document.forms[0].elements[3].value.indexOf(" ") >= 0)
+{
+	alert("Please enter your email-id without any white space character.");
+	 document.forms[0].elements[3].value="";
+	 document.forms[0].elements[3].select(); 
+	 document.forms[0].elements[3].focus(); 
+	return (false);
+}
+
+if ( (document.forms[0].elements[3].value.indexOf("@") == -1) || (document.forms[0].elements[3].value.indexOf(".") == -1) )
+{
+	alert("Please enter a valid email-id"); 
+	 document.forms[0].elements[3].value="";
+	 document.forms[0].elements[3].select(); 
+	 document.forms[0].elements[3].focus(); 
+	return (false);
+}
+
+BeforeAtRate = document.forms[0].elements[3].value.substring(0,document.forms[0].elements[3].value.indexOf("@"));
+AfterAtRate = document.forms[0].elements[3].value.substring(document.forms[0].elements[3].value.indexOf("@")+1,document.forms[0].elements[3].value.length);
+
+if (AfterAtRate.indexOf(".") == -1)
+{
+	alert("Please enter a valid email-id"); 
+	 document.forms[0].elements[3].value="";
+	 document.forms[0].elements[3].select(); 
+	 document.forms[0].elements[3].focus(); 
+	return (false);
+}
+
+middle = AfterAtRate.substring(0, AfterAtRate.indexOf("."))
+last = AfterAtRate.substring(AfterAtRate.indexOf(".") + 1,AfterAtRate.length)
+
+if (BeforeAtRate.length == 0 || middle.length == 0 || last.length == 0)
+{
+	alert("Please enter a valid email-id"); 
+	 document.forms[0].elements[3].value="";
+	 document.forms[0].elements[3].select(); 
+	 document.forms[0].elements[3].focus(); 
+	return (false);
+}
+}
+</script>
+<div align="center"  >
+<body  topmargin="0" leftmargin="0">
+<table width="996" border="0" cellpadding="0" cellspacing="0" background="images/bg.jpg">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="287" height="172">&nbsp;</td>
+    <td width="385">&nbsp;</td>
+    <td width="324">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="330">&nbsp;</td>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/1.png">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="30" height="330">&nbsp;</td>
+        <td width="319" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="319" height="10"></td>
+              </tr>
+          <tr>
+            <td height="78" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr>
+                <td width="319" height="50" valign="top"><div align="center"><img src="images/logo.jpg" width="239" height="50"><br>
+                </div></td>
+                    </tr>
+              <tr>
+                <td height="28" valign="middle"><div align="center" class="text1">
+                  <div align="center"><strong>Mobile : 98453 65377</strong></div>
+                </div></td>
+              </tr>
+              
+            </table></td>
+              </tr>
+          
+          <tr>
+            <td height="57" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr>
+                <td width="319" height="57" valign="middle"><div align="center" class="text1">
+                  <div align="center"><strong>Please fill the following details to <br>
+                    know more information</strong></div>
+                      </div></td>
+                    </tr>
+                </table></td>
+              </tr>
+          <tr>
+            <td height="185" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="text1">
+              <!--DWLayoutTable-->
+              <form name="form1" method="post" action="submit.asp" onSubmit="return verify()">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr> 
+                  <td width="120" height="21" valign="top"><div align="left" class="text1"><strong class="text1">Name</strong><strong> :</strong></div></td>
+                        <td colspan="2" rowspan="2" valign="top"> <div align="left">
+                            <input name="name" type="text" class="text2" id="name" size="25">                        
+                        </div></td>
+                      </tr>
+                <tr> 
+                  <td height="4"></td>
+                      </tr>
+                <tr>
+                  <td height="8"></td>
+                        <td width="87"></td>
+                        <td width="112"></td>
+                      </tr>
+                
+                <tr>
+                  <td height="23" valign="top"><div align="left" class="text1"><strong class="text1">Address</strong> <strong> :</strong></div></td>
+                        <td colspan="2" rowspan="2" valign="top"><div align="left">
+                            <input name="address" type="text" class="text2" id="address" size="25">
+                        </div></td>
+                      </tr>
+                <tr>
+                  <td height="2"></td>
+                      </tr>
+                <tr>
+                  <td height="11"></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                
+                <tr>
+                  <td height="21" valign="top"><div align="left" class="text1"><strong class="text1">Contact No</strong> <strong> :</strong></div></td>
+                        <td colspan="2" rowspan="2" valign="top"><div align="left">
+                            <input name="phone" type="text" class="text2" id="phone" size="20">
+                        </div></td>
+                      </tr>
+                <tr>
+                  <td height="4"></td>
+                      </tr>
+                <tr>
+                  <td height="9"></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                
+                <tr>
+                  <td height="18" valign="top"><div align="left" class="text1"><strong>Email Id :</strong></div></td>
+                        <td colspan="2" rowspan="2" valign="top"><div align="left">
+                            <input name="email" type="text" class="text2" id="email" size="25">
+                        </div></td>
+                      </tr>
+                
+                <tr>
+                  <td height="27">&nbsp;</td>
+                      </tr>
+                <tr>
+                  <td height="24">&nbsp;</td>
+                        <td valign="top"><input type="submit" name="Submit" value="Submit" class="text2"></td>
+                        <td rowspan="2" valign="top"><input type="reset" name="Reset" value="Reset" class="text2" id="Reset"></td>
+                      </tr>
+                <tr>
+                  <td height="2"></td>
+                        <td></td>
+                      </tr>
+                </form>
+                </table></td>
+              </tr>
+        </table></td>
+        <td width="36">&nbsp;</td>
+      </tr>
+      <!--DWLayoutTable-->
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="78">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</div>
+</html>

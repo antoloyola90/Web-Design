@@ -1,0 +1,28 @@
+Product – Tamping rammer TR52
+Part Number - 1000 0052
+
+Unique Features
+point - Ergonomic design
+point - Easy Maneuverability
+point - Light weight
+point - low center of gravity thus very easily movable
+point - world renown HONDA engine 
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = HONDA Make GX 160 engine 
+point – power, value = 5.5HP
+point - Type of fuel for the engine, value = Petrol
+point - Impact force, value = 13.5kN
+point - Jumping height, value = 850mm
+point – size of the compacting base, value = 33cm x 29cm
+point – impact frequency, value = 680 to 640 (per min)
+point - operating mass, value = 76kgs
+table end

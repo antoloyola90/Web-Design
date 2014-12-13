@@ -1,0 +1,217 @@
+/* CSS Document */
+
+body
+{
+	
+	background-color:#eaeaea;
+	background-image:url(images/bgSpacer.jpg);
+
+}
+
+
+td{font-family:Arial;
+		font-size:13px;
+		color:#666666;
+		text-align:justify;
+	
+		
+		}
+		
+		.footertext{font-family:Arial;
+		font-size:11px;
+		color:#666666;
+		
+		}
+
+		
+	
+.text{font-family:Arial;
+		font-size:13px;
+		color:#666666;
+		padding:5px 0px 0px opx;
+		text-align:justify;
+
+		}
+
+
+.text1{font-family:Arial;
+		font-size:12px;
+		color:#ffffff;
+		text-align:justify;
+
+		}
+	
+	.text2{font-family:Arial;
+		font-size:12px;
+		color:#000000;
+		text-align:justify;
+
+		}	
+		
+		
+.readmore{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #cc0000;
+	font-weight:normal;
+	text-decoration:none;
+	
+	
+	
+}
+
+.readmore:hover{
+	
+font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration:none;
+	background-color:#666666;
+	
+	
+}
+
+
+
+
+
+
+
+.sitemap_items{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration:none;
+	
+
+	
+}
+
+.sitemap_items:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #cc0000;
+
+	text-decoration:none;
+	
+	
+
+}
+
+
+
+
+.menu{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration:none;
+font-weight:bold;
+	
+	
+	
+}
+
+.menu:hover{
+	
+font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #e4e4e4;
+	text-decoration:none;
+font-weight:bold;
+	
+	
+}
+
+
+.header{ font-family:  Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #990000;
+	font-weight:bold;
+	border-bottom:1px solid #990000;
+	text-decoration:none;
+	
+
+ 
+ 	}
+
+.solutions {font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration:underline;
+	font-weight:bold;
+ 
+	
+		 	}
+
+.solutions:hover{ font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #cccccc;
+	text-decoration:none;
+		font-weight:bold;
+  
+	
+		 	}
+
+
+.product_links{ font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight:bold;
+	text-decoration:none;
+ 
+	
+		 	}
+
+.product_links:hover{ font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #888888;
+	font-weight:bold;
+	text-decoration:none;
+  
+	
+		 	}
+
+
+.basictext
+{
+font-family: Arial;
+font-size:12px;
+color: #336699;	
+}
+
+.errortext
+{
+font-family: Arial;
+font-size:12px;
+color: #cc0000;	
+}
+
+.underline
+{
+font-family: Arial;
+font-size:12px;
+color: #596A72;
+
+text-decoration:underline;	
+}
+.footer{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	font-weight:normal;
+	text-decoration:none;
+	
+	
+	
+}
+
+.footer:hover{
+	
+font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none
+	
+	
+}

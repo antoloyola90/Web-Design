@@ -1,0 +1,16 @@
+Product – Concrete vibrator Needle CVN 25
+Part Number - 3000 0025
+
+Unique Features
+point - Extremely durable 
+point - hose length available in 6,8,10 and 12 meters
+point - Heavy duty pendulum 
+Features End
+
+table heading : Technical Specifications
+point - Make, value = GREAVES 
+point - Hose structure, value = 8 Ply Canvas Braided
+point - Shaft size, value = 25mm
+point - Drive, value = Mechanical
+point - VPM, value = 3000
+table end

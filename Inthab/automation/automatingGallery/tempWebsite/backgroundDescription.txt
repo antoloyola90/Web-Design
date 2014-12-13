@@ -1,0 +1,6 @@
+Description 1 = ARCHITECTURE
+Description 2 = INTERIOR
+Description 3 = MASTER PLANNING
+Description 4 = PRODUCT DESIGN
+Description 5 = FURNITURE DESIGN
+Description 6 = DESIGN BUILD

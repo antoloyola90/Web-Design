@@ -1,0 +1,27 @@
+Menu
+Home Products
+
+Product - ReBar Cutting machine GQ42C
+Part Number - 2000 0042
+
+Unique Features
+point - Efficent and accurate
+point - Heavy duty connecting road, titanium glazed
+point - Sailent Bent axle
+point - Heavy duty imported flywheel for higher torque
+point - Excellent operational capacity
+Features End
+
+Applications
+point - TMT rod
+point - steel rod
+point - iron rod
+Applications End
+ 
+
+table heading : Technical Specifications
+point - Maximum cutting dia, value - 36mm(TMT)
+point - Motor Capacity - value - 5HP
+point - overall dimentions - value - 1300mm x 550mm x 740mm
+point - Weight, value - 400kgs
+table end

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="jquery,tooltip,popup,plugin,css3,open-source,mit-license,extension,overlay">
+    <meta name="description" content="Sebastian Helzle's jQuery Rondell plugin">
+    <link rel="stylesheet" href="../examples/screen.css" type="text/css" media="all" title="Screen">
+    <link rel="stylesheet" href="../dist/jquery.rondell.css" type="text/css" media="all" title="Screen">
+    <script src="../libs/modernizr-2.0.6.min.js"></script>
+    <title>Carousel - jQuery Rondell</title>
+  </head>
+  <body>
+   
+      <div align="center">
+        <div id="rondellCarousel" class="hidden" style="background:red">
+        
+        	<a  rel="rondell_1" href="#" title="My favourite band"><img src="images/gallery/barBending.png" alt="Band" title="My favourite band">
+            <h5>Awesome concert</h5>
+            <p>My favourite band.</p></a>
+            <a  rel="rondell_1" href="#" title="My dog"><img src="images/gallery/barCutting.png" alt="Dog" title="My dog">
+            <h5>My dog</h5>
+            <p>Standing in front of a glass door and wants in.</p></a>
+            <a  rel="rondell_1" href="#" title="My cat"><img src="images/gallery/rideOnRoller.jpg" alt="Cat" title="My cat">
+            <h5>My cat</h5>
+            <p>Sleeping...</p></a>
+            <a  rel="rondell_1" href="#" title="Boar"><img src="images/gallery/tampingRammer.png" alt="Boar" title="Boar">
+            <h5>Dead boar on the wall</h5>
+            <p>Hanging around.</p></a>
+            <a  rel="rondell_1" href="#" title="Snow"><img src="images/gallery/walkBehindRoller.jpg" alt="Snow" title="Snow">
+            <h5>Winter wonderland</h5>
+            <p>The german alps.</p></a>
+            </div>
+      </div>
+      </div><br class="clear">
+    </div><br>
+    <script src="../libs/jquery-1.10.2.min.js"></script>
+    <script src="../libs/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="../dist/jquery.rondell.js"></script><script type="text/javascript">
+(function() {
+  $(function() {
+    var carousel;
+    carousel = $("#rondellCarousel").rondell({
+      preset: "carousel"
+    });
+  });
+
+}).call(this);
+</script>
+    <script src="../examples/demohelpers.js"></script>
+  </body>
+</html>

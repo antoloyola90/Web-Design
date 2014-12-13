@@ -1,0 +1,23 @@
+Location = Bangalore Office
+Apartment No = 4-s4
+Complex Name = Ranka Park Apartment
+Landmark = Near Richmond Circle
+Road = Lalbagh Road
+City = Bengaluru
+Zip Code = 560027
+Phone Number = Ph :- 080 - 2222 5342
+Email 1 = mail@inthab.com
+Email 2 = sachinshetty@inthab.com
+
+breakForAnotherOffice
+
+Location = Mangalore Office
+Apartment No = Tower B, 4th floor
+Complex Name = Rambhavan Complex
+Landmark = Navbharath circle
+Road = 
+City = Mangalore
+Zip Code = 575003
+Phone Number = Ph :- 080 - 2222 5342
+Email 1 = mail@inthab.com
+Email 2 = sachinshetty@inthab.com

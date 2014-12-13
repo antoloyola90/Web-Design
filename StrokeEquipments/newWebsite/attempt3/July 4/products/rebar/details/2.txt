@@ -1,0 +1,24 @@
+Product - ReBar Bending machine GW50D
+Part Number - 2000 1050
+
+Unique Features
+point - Efficient and accurate
+point - Gear Box is completely enclosed
+point - Fuel efficient roller bearing Structure
+point - Excellent operational capacity
+Features End
+
+Applications
+point - TMT rod
+point - steel rod
+point - iron rod
+Applications End
+ 
+
+table heading : Technical Specifications
+point - Maximum Bending diameter , value = 42mm(TMT)
+point - Motor Capacity , value = 7HP
+point - overall dimensions , value = 810mm x 760mm x 860mm
+point - Weight , value = 550kgs
+table end
+

@@ -1,0 +1,15 @@
+Product – Concrete vibrator PV2 
+Part Number - 3000 0002
+
+Unique Features
+point - Extremely durable 
+point - world renown GREAVES engine 
+Features End
+
+table heading : Technical Specifications
+point - Engine, value = GREAVES MK12 engine 
+point – Power, value = 2HP
+point - Type of fuel for the engine, value = Petrol
+point – Type of cooling, value = air cooled
+point - RPM, value = 3000
+table end

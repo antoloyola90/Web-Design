@@ -1,0 +1,27 @@
+Location = Chennai Office
+Store Name = Stroke equipments India pvt Ltd
+Apartment No = #18
+Landmark =
+Road = Singanna Nicken street
+Layout = Parrys
+Block Name =
+City = Chennai
+Zip Code = 600001
+Phone Number = 
+Mobile =  +91 - 98842 23399
+Email 1 = hamzaa@strokeequipments.com
+
+breakForAnotherOffice
+
+Location = Bangalore Office
+Store Name = Stroke equipment & Instrumentation pvt Ltd
+Apartment No = #24
+Landmark = RL complex 
+Road = Haudin road
+Layout = 
+Block Name = 
+City = Bangalore
+Zip Code = 560042
+Phone Number = 0821 - 2421977
+Mobile =  +91 9884 210 210, +91 998 6316 110
+Email 1 = Husain.Erin@strokeequipments.com

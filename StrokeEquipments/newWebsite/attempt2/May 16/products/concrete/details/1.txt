@@ -1,0 +1,15 @@
+Product – Concrete vibrator DV5 
+Part Number - 3000 0005
+
+Unique Features
+point - Extremely durable 
+point - world renown GREAVES engine 
+Features End
+
+table heading : Technical Specifications
+point - Engine, value = GREAVES 5520 engine 
+point – Power, value = 5HP
+point - Type of fuel for the engine, value = Diesel
+point – Type of cooling, value = air cooled
+point - RPM, value = 3600
+table end

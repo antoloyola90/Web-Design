@@ -1,0 +1,26 @@
+Product – Plate Compactor ER03
+Part Number - 1000 0003
+
+Unique Features
+point - Easy Maneuverability
+point - Heavy duty base plate of 19mm
+point – Can access the most narrowest regions
+point - GREAVES engine 
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = GREAVES make MK25 engine 
+point – power, value = 3HP
+point - Type of fuel for the engine, value = Petrol
+point - Impact force, value = 12.5kN
+point – size of the compacting base, value = 33cm x 29cm
+point – impact frequency, value = 6140 VPM
+point - operating mass, value = 95kgs
+table end

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+	<!-- Add jQuery library -->
+		<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type='text/javascript' src='../js/jquery.mousewheel-3.0.6.pack.js'></script>
+
+		<!-- Add fancyBox -->
+		<link rel='stylesheet' href='../source/jquery.fancybox.css?v=2.1.5' type='text/css' media='screen' />
+		<script type='text/javascript' src='../source/jquery.fancybox.pack.js?v=2.1.5'></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel='stylesheet' href='../source/helpers/jquery.fancybox-buttons.css?v=1.0.5' type='text/css' media='screen' />
+		<script type='text/javascript' src='../source/helpers/jquery.fancybox-buttons.js?v=1.0.5'></script>
+		<script type='text/javascript' src='../source/helpers/jquery.fancybox-media.js?v=1.0.6'></script>
+
+		<link rel='stylesheet' href='../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7' type='text/css' media='screen' />
+		<script type='text/javascript' src='../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7'></script>
+
+	<script type='text/javascript'>
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$('.fancybox-effects-a').fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$('.fancybox-effects-b').fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$('.fancybox-effects-c').fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$('.fancybox-effects-d').fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				prevEffect : 'elastic',
+				nextEffect : 'elastic',
+				
+				closeBtn  : true,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+					
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$('#fancybox-manual-a').click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$('#fancybox-manual-b').click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$('#fancybox-manual-c').click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<style type='text/css'>
+		/*.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+			
+		}*/
+
+		body {
+			max-width: 550px;
+			margin: 0 auto;
+			color:white;
+		}
+		.fancybox-overlay {
+	
+		background: white;
+		
+		}
+		.fancybox-skin {
+	
+		opacity: 1.0 !important; 
+	
+		}
+		#float-bottom
+		{
+			position: fixed; 
+			bottom: 5px;
+			padding:5px;
+		}
+		a
+		{
+			color:white;
+		}
+		
+	</style>
+	
+	<script type='text/javascript'>
+	
+	function changeProjectNameOnClick(str){
+		document.getElementById('projectName1').innerHTML=str;
+		document.getElementById('projectName2').innerHTML=str;
+	}
+	function changeProjectNameOnMouseOut(){
+		document.getElementById('projectName1').innerHTML='&nbsp;';
+		document.getElementById('projectName2').innerHTML='&nbsp;';
+	}
+	</script>
+	
+</head>
+
+<body bgcolor='black'>
+
+	<h2 align='center' id='projectName1'>&nbsp;</h2>
+	
+	<p>
+	<a class='fancybox-thumbs' title=' Country reality, Dodaballapura' data-fancybox-group='Apartments1' href='./images/Apartments/1/1 Country reality, Dodaballapura.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Apartments')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Apartments/1/1 Country reality, Dodaballapura.jpg' 
+																	alt=' Country reality, Dodaballapura'  /></a>
+<a class='fancybox-thumbs' title=' Country reality, Dodaballapura' data-fancybox-group='Apartments1' href='./images/Apartments/1/2 Country reality, Dodaballapura.jpg' ></a>
+<a class='fancybox-thumbs' title=' Country reality, Dodaballapura' data-fancybox-group='Apartments1' href='./images/Apartments/1/3 Country reality, Dodaballapura.jpg' ></a>
+<a class='fancybox-thumbs' title=' Pavani Estates, Hyderabad' data-fancybox-group='Apartments2' href='./images/Apartments/2/1 Pavani Estates, Hyderabad.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Apartments')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Apartments/2/1 Pavani Estates, Hyderabad.jpg' 
+																	alt=' Pavani Estates, Hyderabad'  /></a>
+<a class='fancybox-thumbs' title=' Pavani Estates, Hyderabad' data-fancybox-group='Apartments2' href='./images/Apartments/2/2 Pavani Estates, Hyderabad.jpg' ></a>
+<a class='fancybox-thumbs' title=' Pavani Pallazzo, Hyderabad' data-fancybox-group='Apartments3' href='./images/Apartments/3/1 Pavani Pallazzo, Hyderabad.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Apartments')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Apartments/3/1 Pavani Pallazzo, Hyderabad.jpg' 
+																	alt=' Pavani Pallazzo, Hyderabad'  /></a>
+<a class='fancybox-thumbs' title=' Pavani Pallazzo, Hyderabad' data-fancybox-group='Apartments3' href='./images/Apartments/3/2 Pavani Pallazzo, Hyderabad.jpg' ></a>
+<a class='fancybox-thumbs' title=' Pavani Petals, Hyderabad' data-fancybox-group='Apartments4' href='./images/Apartments/4/1 Pavani Petals, Hyderabad.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Apartments')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Apartments/4/1 Pavani Petals, Hyderabad.jpg' 
+																	alt=' Pavani Petals, Hyderabad'  /></a>
+<a class='fancybox-thumbs' title=' Pavani Petals, Hyderabad' data-fancybox-group='Apartments4' href='./images/Apartments/4/2 Pavani Petals, Hyderabad.jpg' ></a>
+<a class='fancybox-thumbs' title=' Pavani Petals, Hyderabad' data-fancybox-group='Apartments4' href='./images/Apartments/4/3 Pavani Petals, Hyderabad.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Suresh Babu, Bangalore' data-fancybox-group='Commercial1' href='./images/Commercial/1/1 Mr Suresh Babu, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Commercial')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Commercial/1/1 Mr Suresh Babu, Bangalore.jpg' 
+																	alt=' Mr Suresh Babu, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Suresh Babu, Bangalore' data-fancybox-group='Commercial1' href='./images/Commercial/1/2 Mr Suresh Babu, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Mohan kumar, Bangalore' data-fancybox-group='Commercial2' href='./images/Commercial/2/1 Mr Mohan kumar, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Commercial')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Commercial/2/1 Mr Mohan kumar, Bangalore.jpg' 
+																	alt=' Mr Mohan kumar, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Mohan kumar, Bangalore' data-fancybox-group='Commercial2' href='./images/Commercial/2/2 Mr Mohan kumar, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Lumens, Hoskote' data-fancybox-group='Commercial2' href='./images/Commercial/2/3 M s Lumens, Hoskote.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Lumens, Hoskote' data-fancybox-group='Commercial2' href='./images/Commercial/2/4 M s Lumens, Hoskote.jpg' ></a>
+<a class='fancybox-thumbs' title=' Convention Centre, Shimoga' data-fancybox-group='Commercial3' href='./images/Commercial/3/1 Convention Centre, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Commercial')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Commercial/3/1 Convention Centre, Shimoga.jpg' 
+																	alt=' Convention Centre, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' M s Aveksha Hospital, Bangalore' data-fancybox-group='Hospital1' href='./images/Hospital/1/1 M s Aveksha Hospital, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospital')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospital/1/1 M s Aveksha Hospital, Bangalore.jpg' 
+																	alt=' M s Aveksha Hospital, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' M s Aveksha Hospital, Bangalore' data-fancybox-group='Hospital1' href='./images/Hospital/1/2 M s Aveksha Hospital, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Aveksha Hospital, Bangalore' data-fancybox-group='Hospital1' href='./images/Hospital/1/3 M s Aveksha Hospital, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Nanjappa Life Care, Shimoga' data-fancybox-group='Hospital2' href='./images/Hospital/2/1 M s Nanjappa Life Care, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospital')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospital/2/1 M s Nanjappa Life Care, Shimoga.jpg' 
+																	alt=' M s Nanjappa Life Care, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' M s Nanjappa Life Care, Shimoga' data-fancybox-group='Hospital2' href='./images/Hospital/2/2 M s Nanjappa Life Care, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Nanjappa Life Care, Shimoga' data-fancybox-group='Hospital2' href='./images/Hospital/2/3 M s Nanjappa Life Care, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' M s Nanjappa Life Care, Shimoga' data-fancybox-group='Hospital2' href='./images/Hospital/2/4 M s Nanjappa Life Care, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Country Club, Tumkur' data-fancybox-group='Hospitality1' href='./images/Hospitality/1/1 Country Club, Tumkur.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospitality')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospitality/1/1 Country Club, Tumkur.jpg' 
+																	alt=' Country Club, Tumkur'  /></a>
+<a class='fancybox-thumbs' title=' Country Club, Tumkur' data-fancybox-group='Hospitality1' href='./images/Hospitality/1/2 Country Club, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Country Club, Tumkur' data-fancybox-group='Hospitality1' href='./images/Hospitality/1/3 Country Club, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Country Club, Tumkur' data-fancybox-group='Hospitality1' href='./images/Hospitality/1/4 Country Club, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Kuteeram, Hyderabad' data-fancybox-group='Hospitality2' href='./images/Hospitality/2/1 Kuteeram, Hyderabad.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospitality')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospitality/2/1 Kuteeram, Hyderabad.jpg' 
+																	alt=' Kuteeram, Hyderabad'  /></a>
+<a class='fancybox-thumbs' title=' Kuteeram, Hyderabad' data-fancybox-group='Hospitality2' href='./images/Hospitality/2/2 Kuteeram, Hyderabad.jpg' ></a>
+<a class='fancybox-thumbs' title=' Petals Club, Hyderabad' data-fancybox-group='Hospitality3' href='./images/Hospitality/3/1 Petals Club, Hyderabad.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospitality')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospitality/3/1 Petals Club, Hyderabad.jpg' 
+																	alt=' Petals Club, Hyderabad'  /></a>
+<a class='fancybox-thumbs' title=' RR Resorts, Shimoga' data-fancybox-group='Hospitality4' href='./images/Hospitality/4/1 RR Resorts, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Hospitality')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Hospitality/4/1 RR Resorts, Shimoga.jpg' 
+																	alt=' RR Resorts, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' Mandara School and Pre University, Shimoga' data-fancybox-group='Institutions1' href='./images/Institutions/1/1 Mandara School and Pre University, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Institutions')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Institutions/1/1 Mandara School and Pre University, Shimoga.jpg' 
+																	alt=' Mandara School and Pre University, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' Mandara School and Pre University, Shimoga' data-fancybox-group='Institutions1' href='./images/Institutions/1/2 Mandara School and Pre University, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mandara School and Pre University, Shimoga' data-fancybox-group='Institutions1' href='./images/Institutions/1/3 Mandara School and Pre University, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Nanjappa Nursing Institute, Shimoga' data-fancybox-group='Institutions2' href='./images/Institutions/2/1 Nanjappa Nursing Institute, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Institutions')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Institutions/2/1 Nanjappa Nursing Institute, Shimoga.jpg' 
+																	alt=' Nanjappa Nursing Institute, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' Nanjappa Nursing Institute, Shimoga' data-fancybox-group='Institutions2' href='./images/Institutions/2/2 Nanjappa Nursing Institute, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Nanjappa Nursing Institute, Shimoga' data-fancybox-group='Institutions2' href='./images/Institutions/2/3 Nanjappa Nursing Institute, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Nanjappa Nursing Institute, Shimoga' data-fancybox-group='Institutions2' href='./images/Institutions/2/4 Nanjappa Nursing Institute, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Rao, Mangalore' data-fancybox-group='Interior1' href='./images/Interior/1/1 Mr Rao, Mangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Interior')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Interior/1/1 Mr Rao, Mangalore.jpg' 
+																	alt=' Mr Rao, Mangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Rao, Mangalore' data-fancybox-group='Interior1' href='./images/Interior/1/2 Mr Rao, Mangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Rao, Mangalore' data-fancybox-group='Interior1' href='./images/Interior/1/3 Mr Rao, Mangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Subash and Rajesh Associates, Bangalore' data-fancybox-group='Interior2' href='./images/Interior/2/1 Subash and Rajesh Associates, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Interior')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Interior/2/1 Subash and Rajesh Associates, Bangalore.jpg' 
+																	alt=' Subash and Rajesh Associates, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Om Shakthi Impex Pvt Ltd, Tumkur' data-fancybox-group='Interior3' href='./images/Interior/3/1 Om Shakthi Impex Pvt Ltd, Tumkur.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Interior')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Interior/3/1 Om Shakthi Impex Pvt Ltd, Tumkur.jpg' 
+																	alt=' Om Shakthi Impex Pvt Ltd, Tumkur'  /></a>
+<a class='fancybox-thumbs' title=' Om Shakthi Impex Pvt Ltd, Tumkur' data-fancybox-group='Interior3' href='./images/Interior/3/2 Om Shakthi Impex Pvt Ltd, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Om Shakthi Impex Pvt Ltd, Tumkur' data-fancybox-group='Interior3' href='./images/Interior/3/3 Om Shakthi Impex Pvt Ltd, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Om Shakthi Impex Pvt Ltd, Tumkur' data-fancybox-group='Interior3' href='./images/Interior/3/4 Om Shakthi Impex Pvt Ltd, Tumkur.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Rakesh, Bangalore' data-fancybox-group='Interior4' href='./images/Interior/4/1 Mr Rakesh, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Interior')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Interior/4/1 Mr Rakesh, Bangalore.jpg' 
+																	alt=' Mr Rakesh, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Rakesh, Bangalore' data-fancybox-group='Interior4' href='./images/Interior/4/2 Mr Rakesh, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Rakesh, Bangalore' data-fancybox-group='Interior4' href='./images/Interior/4/3 Mr Rakesh, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Sudrashan, Bangalore' data-fancybox-group='Interior5' href='./images/Interior/5/1 Mr Sudrashan, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Interior')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Interior/5/1 Mr Sudrashan, Bangalore.jpg' 
+																	alt=' Mr Sudrashan, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Sudrashan, Bangalore' data-fancybox-group='Interior5' href='./images/Interior/5/2 Mr Sudrashan, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Sudrashan, Bangalore' data-fancybox-group='Interior5' href='./images/Interior/5/3 Mr Sudrashan, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Ashok, Shimoga' data-fancybox-group='Residence1' href='./images/Residence/1/1 Mr Ashok, Shimoga.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Residence')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Residence/1/1 Mr Ashok, Shimoga.jpg' 
+																	alt=' Mr Ashok, Shimoga'  /></a>
+<a class='fancybox-thumbs' title=' Mr Ashok, Shimoga' data-fancybox-group='Residence1' href='./images/Residence/1/2 Mr Ashok, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Ashok, Shimoga' data-fancybox-group='Residence1' href='./images/Residence/1/3 Mr Ashok, Shimoga.jpg' ></a>
+<a class='fancybox-thumbs' title=' Dr Krishnashetty, Kolar' data-fancybox-group='Residence2' href='./images/Residence/2/1 Dr Krishnashetty, Kolar.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Residence')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Residence/2/1 Dr Krishnashetty, Kolar.jpg' 
+																	alt=' Dr Krishnashetty, Kolar'  /></a>
+<a class='fancybox-thumbs' title=' Mr Babu, Bangalore' data-fancybox-group='Residence3' href='./images/Residence/3/1 Mr Babu, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Residence')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Residence/3/1 Mr Babu, Bangalore.jpg' 
+																	alt=' Mr Babu, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Babu, Bangalore' data-fancybox-group='Residence3' href='./images/Residence/3/2 Mr Babu, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Babu, Bangalore' data-fancybox-group='Residence3' href='./images/Residence/3/3 Mr Babu, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Babu, Bangalore' data-fancybox-group='Residence3' href='./images/Residence/3/4 Mr Babu, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Babu, Bangalore' data-fancybox-group='Residence3' href='./images/Residence/3/5 Mr Babu, Bangalore.jpg' ></a>
+<a class='fancybox-thumbs' title=' Mr Raghavan, Bangalore' data-fancybox-group='Residence4' href='./images/Residence/4/1 Mr Raghavan, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Residence')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Residence/4/1 Mr Raghavan, Bangalore.jpg' 
+																	alt=' Mr Raghavan, Bangalore'  /></a>
+<a class='fancybox-thumbs' title=' Mr Swamy, Bangalore' data-fancybox-group='Residence5' href='./images/Residence/5/1 Mr Swamy, Bangalore.jpg' >
+																	<img class='greyToColor' onmouseover="changeProjectNameOnClick('Residence')" onmouseout='changeProjectNameOnMouseOut()' src='./thumb/Residence/5/1 Mr Swamy, Bangalore.jpg' 
+																	alt=' Mr Swamy, Bangalore'  /></a>
+
+	
+</p>
+	
+	<table max-width='550px' width='100%' id='floatt-bottom'>
+	<tr><td width='37%' align='left'><a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/1 Activities.jpg'>
+      															 Activities</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/10 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/11 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/12 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/13 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/2 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/3 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/4 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/5 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/6 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/7 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/8 Activities.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Activities' data-fancybox-group='bottomLinksActivities' href='./images/bottomLinks/Activities/9 Activities.jpg'>
+      															</a>
+</td><td width='37%' align='left'><a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/1 Competition Sheets.jpg'>
+      															 Competition Sheets</a>
+<a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/2 Competition Sheets.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/3 Competition Sheets.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/4 Competition Sheets.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/5 Competition Sheets.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Competition Sheets' data-fancybox-group='bottomLinkscompetitionSheets' href='./images/bottomLinks/competitionSheets/6 Competition Sheets.jpg'>
+      															</a>
+</td><td width='37%' align='left'><a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/1 Team.jpg'>
+      															 Team</a>
+<a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/2 Team.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/3 Team.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/4 Team.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/5 Team.jpg'>
+      															</a>
+<a class='fancybox-thumbs' title=' Team' data-fancybox-group='bottomLinksTeam' href='./images/bottomLinks/Team/6 Team.jpg'>
+      															</a>
+</td>
+	</tr>
+	</table>
+
+	
+	<h2 align='center' id='projectName2'>&nbsp;</h2>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+Product - Walk Behind roller RWYL 12 
+Part Number - 1000 0012
+
+Unique Features
+point - Mechanical Drive, thus lesser maintenance cost 
+point - Ergonomic design
+point - Easy Maneuverability
+point - Grad-ability of about 35%
+point - Recognized HONDA GX 160 engine
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = HONDA make, Model No GX 160 
+point - Exerting force, value = 10kN
+point - RPM, value = 3600
+point - Type of fuel for the engine, value = Petrol
+point - Power, value = 5.5HP
+point - Vibration Frequency, value = 80 Hz
+point - Fuel tank Capacity, value = 3.6 Liters
+point - Fuel consumption, value = 313g/kwh
+point - Drive, value = Static Hydraulic drive Unit
+point - Vibrating mechanism, value = Automatic centrifugal clutch
+point - Width of the steel rolling drum, value = 450mm
+point - Diameter of the steel rolling drum, value = 350mm
+point - operating mass, value = 142kgs
+table end

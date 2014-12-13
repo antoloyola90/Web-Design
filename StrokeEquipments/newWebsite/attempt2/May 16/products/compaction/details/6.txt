@@ -1,0 +1,43 @@
+Menu
+Home Products
+
+Product - Ride on roller MMAL 42
+Part Number - 1000 0042
+
+Unique Features
+point - Mechanical Drive reducing maintenance cost 
+point - Ergonomic design, with comfortable sitting, to minimize vibrations for the driver
+point - Easy Maneuverability
+point – Grad-ability of about 35%
+point - Recognized KIPOR diesel engine
+
+Features End
+
+Applications
+point - Soil
+point - sand
+point - silt
+point - Clay
+Applications End
+
+table heading : Technical Specifications
+point - engine, value = KIPOR make,6HP
+point - type of engine cooling = air cooled
+point - RPM, value = 3600
+point - Type of fuel for the engine, value = Diesel
+point - Traveling speed, value = 0-4km/hr (forward and reverse)
+point - Turing radius, value = 2000mm
+point - Static forward load, value = 57N/cm
+point - Static back load, value = 22.5N/cm
+point - Normal amplitude, value = 0.5mm
+point - Exerting force, value = 13.5kN
+point - Vibration Frequency, value = 70 Hz
+point - Water tank Capacity, value = 18 Liters
+point - Drive, value = Static Hydraulic drive Unit
+point - Vibrating mechanism, value = Electro magnetic clutch
+point - Width of the steel rolling drum(front), value = 650mm
+point - Width of the steel rolling drum(rear), value = 450mm
+point - Diameter of the steel rolling drum(front), value = 500mm
+point - Diameter of the steel rolling drum(rear), value = 400mm
+point - Operating mass, value = 730kgs
+table end

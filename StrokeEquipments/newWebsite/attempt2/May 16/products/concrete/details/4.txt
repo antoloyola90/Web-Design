@@ -1,0 +1,14 @@
+Product – Concrete vibrator EV3S
+Part Number - 3000 1003
+
+Unique Features
+point - Extremely durable 
+point - Heavy duty motor
+Features End
+
+table heading : Technical Specifications
+point - Motor, value = DYNAMIC MARSHALL 
+point – Power, value = 3HP
+point - Type, value = Single phase
+point - RPM, value = 2880
+table end

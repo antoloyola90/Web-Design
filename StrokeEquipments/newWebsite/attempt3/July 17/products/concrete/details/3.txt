@@ -1,0 +1,14 @@
+Product – Concrete vibrator PV2T
+Part Number - 3000 1102
+
+Unique Features
+point - Extremely durable 
+point - Heavy duty motor
+Features End
+
+table heading : Technical Specifications
+point - Motor, value = DYNAMIC MARSHALL 
+point – Power, value = 2HP
+point - Type, value = Three phase
+point - RPM, value = 2880
+table end
